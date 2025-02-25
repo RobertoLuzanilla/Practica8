@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:padding="8dp"> <!-- Usar dp en lugar de pt para un mejor resultado en diferentes dispositivos -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"> <!-- Agregar gravity en el LinearLayout para centrar los hijos -->
+
+        <ImageView
+            android:id="@+id/image_movie_call"
+            android:layout_width="85dp"
+            android:layout_height="113dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="8dp"/> <!-- Agregar margen inferior para separación entre la imagen y el texto-->
+
+        <TextView
+            android:id="@+id/movie_title_cell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/> <!-- Agregar margen superior para separar el texto de la imagen -->
+
+    </LinearLayout>
+</LinearLayout>
